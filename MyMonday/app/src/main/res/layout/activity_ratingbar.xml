@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ratingbar"
+    android:orientation="vertical"
+    android:background="#A3EFEFEF">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A1B684"
+        android:padding="13dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-1dp"
+            android:text="REVIEW RESTAURANT"
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_bg1"
+        android:padding="15dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-1dp"
+            android:text="RATING"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_bg1"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-1dp"
+            android:text="COMMENT"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="-1dp"
+            android:hint="Write Review"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/imageView35"
+            android:layout_width="412dp"
+            android:layout_height="320dp"
+            android:contentDescription="@string/hijau"
+            app:srcCompat="@drawable/footer"
+            android:layout_marginTop="-20sp"/>
+        <Button
+            android:id="@+id/btnsubmit"
+            android:background="@drawable/gradient_bg1"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:text="SUBMIT REVIEW"
+            android:textColor="@color/black"
+            android:layout_marginTop="-200dp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="110dp"
+            app:backgroundTint="#FCBE45"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:src="@drawable/leaf"
+            android:layout_marginTop="-90dp"
+            android:layout_marginLeft="-20sp"/>
+    </LinearLayout>
+</LinearLayout>

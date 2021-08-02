@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1043124645123",
+    "firebase_url": "https://mondayapp-2fcbf-default-rtdb.firebaseio.com",
+    "project_id": "mondayapp-2fcbf",
+    "storage_bucket": "mondayapp-2fcbf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043124645123:android:1fca497c2e3e0483534d36",
+        "android_client_info": {
+          "package_name": "com.example.mymonday"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043124645123-g8e4jn2fptiri58hk7atqboj1pc2dqha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAedr_mx62clifaHJ2xK1bCRjthtGRZuLk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043124645123-g8e4jn2fptiri58hk7atqboj1pc2dqha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

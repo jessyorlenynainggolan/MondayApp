@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity android:name="com.example.mymonday.detailbill"></activity>
+        <activity android:name="com.example.mymonday.transaction" />
+        <activity android:name="com.example.mymonday.cashless" />
+        <activity android:name="com.example.mymonday.Successfull" />
+        <activity android:name="com.example.mymonday.menuuu" />
+        <activity android:name="com.example.mymonday.ui.cekmenu" />
+        <activity android:name="com.example.mymonday.checkmenu" />
+    </application>
+
+</manifest>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".restoranku"
+    android:id="@+id/drawer_layout"
+    android:background="#a1b684">
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="396dp"
+        android:layout_height="589dp"
+        android:contentDescription="@string/head"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <include
+                layout="@layout/main_toolbar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="140dp"
+            android:layout_height="190dp"
+            android:contentDescription="@string/button"
+            android:text="Scan QR Code"
+            android:textSize="12sp"
+            app:backgroundTint="#497D59"
+            tools:ignore="HardcodedText"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0sp"
+            android:layout_marginStart="35sp"/>
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="140dp"
+            android:layout_height="190dp"
+            android:contentDescription="@string/button"
+            android:text="Find Supported Restaurant"
+            android:textSize="12sp"
+            app:backgroundTint="#497D59"
+            tools:ignore="HardcodedText"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0sp"
+            android:layout_marginStart="10sp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+        <include
+            layout="@layout/main_nav_drawer"/>
+
+    </RelativeLayout>
+
+     </androidx.drawerlayout.widget.DrawerLayout>

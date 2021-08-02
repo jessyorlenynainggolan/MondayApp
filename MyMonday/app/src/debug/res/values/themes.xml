@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Theme.MyMonday.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MyMonday.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MyMonday.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

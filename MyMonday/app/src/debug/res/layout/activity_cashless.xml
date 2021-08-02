@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cashless"
+    android:orientation="vertical"
+    android:background="#A3EFEFEF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A1B684"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_baseline_arrow_back_24"
+            app:backgroundTint="#636363" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-1dp"
+            android:text="PROCESS TO PAY"
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/gradient_bg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="95dp"
+                android:layout_height="140dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:src="@drawable/burger" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Italian pizza stuffed with meat, vegetables and basil and covered with melted cheese"
+                android:textColor="#636363"
+                android:layout_marginLeft="30dp"
+                android:textSize="12dp" />
+            <TextView
+                android:id="@+id/foodprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="25.000"
+                android:textColor="#636363"
+                android:layout_marginLeft="30dp"
+                android:textSize="14dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/txt_ttl1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="-10dp"
+                android:hint=" 0"
+                android:textColorHint="#ffffff"
+                android:inputType="number"
+                android:background="#A0522D"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

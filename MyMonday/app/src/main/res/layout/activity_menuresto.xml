@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menuresto"
+    android:orientation="vertical"
+    android:background="#A3EFEFEF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A1B684"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/back2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_baseline_arrow_back_24"
+            app:backgroundTint="#636363" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-1dp"
+            android:text="RESTAURANTS MENU"
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:background="@drawable/head"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"/>
+
+        <!--splash1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/gradient_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="140dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:src="@drawable/burger" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <CheckBox
+                    android:id="@+id/burger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hamburger"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Italian pizza stuffed with meat, vegetables and basil and covered with melted cheese"
+                    android:textColor="#636363"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/foodprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="25.000"
+                    android:textColor="#636363"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="14dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/txt_ttl1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="-10dp"
+                    android:hint=" 0"
+
+                    android:textColorHint="#ffffff"
+                    android:inputType="number"
+                    android:background="#A0522D"
+                    android:textColor="#ffffff"/>
+
+            </LinearLayout>
+        </LinearLayout>
+            <!--splash2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/gradient_bg"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="95dp"
+                        android:layout_height="140dp"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="true"
+                        android:src="@drawable/spageti" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <CheckBox
+                        android:id="@+id/spageti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Spaghetti"
+                        android:textSize="16dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Spaghetti served with Bolognese sauce made of tomatoes,beef, garlic, and other spices."
+                        android:textColor="#636363"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="160.000"
+                        android:textColor="#636363"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="14dp"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/txt_ttl2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="-10dp"
+                        android:hint=" 0"
+                        android:textColorHint="#ffffff"
+                        android:inputType="number"
+                        android:background="#A0522D"
+                        android:textColor="#ffffff"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!--splash3-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/gradient_bg"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="95dp"
+                        android:layout_height="140dp"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="true"
+                        android:src="@drawable/italia" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <CheckBox
+                        android:id="@+id/piza"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Italian Pizza"
+                        android:textSize="16dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Italian pizza stuffed with meat, vegetables and basil and covered with melted cheese"
+                        android:textColor="#636363"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="195.000"
+                        android:textColor="#636363"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="14dp"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/txt_ttl3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="-10dp"
+                        android:hint=" 0"
+                        android:textColorHint="#ffffff"
+                        android:inputType="number"
+                        android:background="#A0522D"
+                        android:textColor="#ffffff"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <!--splash4-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/gradient_bg"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="95dp"
+                        android:layout_height="140dp"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="true"
+                        android:src="@drawable/tea" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <CheckBox
+                        android:id="@+id/lemon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lemon Tea"
+                        android:textSize="16dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Refreshing tea where lemon wedges are added to the tea."
+                        android:textColor="#636363"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="20.000"
+                        android:textColor="#636363"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="14dp"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/txt_ttl4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="-10dp"
+                        android:hint=" 0"
+                        android:textColorHint="#ffffff"
+                        android:inputType="number"
+                        android:background="#A0522D"
+                        android:textColor="#ffffff"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/gradient_bg"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="95dp"
+                        android:layout_height="140dp"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="true"
+                        android:src="@drawable/thai" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/thai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thailand Tea"
+                        android:textSize="16dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thai drink made of Ceylon tea, milk and sugar, and served hot or cold."
+                        android:textColor="#636363"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="25.000"
+                        android:textColor="#636363"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="14dp"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/txt_ttl5"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="-10dp"
+                        android:hint=" 0"
+                        android:textColorHint="#ffffff"
+                        android:inputType="number"
+                        android:background="#A0522D"
+                        android:textColor="#ffffff"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <!--splash5-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/gradient_bg"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="95dp"
+                        android:layout_height="140dp"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="true"
+                        android:src="@drawable/kopi" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <CheckBox
+                        android:id="@+id/cofe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ice Coffe"
+                        android:textSize="16dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A drink brewed from coffee beans that have been roasted and mashed into powder."
+                        android:textColor="#636363"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="20.000"
+                        android:textColor="#636363"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="14dp"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/txt_ttl6"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="-10dp"
+                        android:hint=" 0"
+                        android:textColorHint="#ffffff"
+                        android:inputType="number"
+                        android:background="#A0522D"
+                        android:textColor="#ffffff"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp">
+                <Button
+                    android:id="@+id/btnorder"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="90dp"
+                    app:backgroundTint="#A0522D"
+                    android:text="Order"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/gradient_bg1" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
